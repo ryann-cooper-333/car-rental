@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: Poppins;
+}
+body{
+    background-color: rgb(60 60 60);
+    color: white;
+}
+header{
+    text-align: center;
+    background-color: darkcyan;
+    
+}
+nav{
+    text-align: right;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-radius: 12px;
+}
+a{
+    text-decoration: none;
+    text-align: right;
+    color: black;
+    background-color: aqua;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.car-img{
+    text-align: right;
+    align-items: right;
+    padding-right: 200px;
+    outline: 3px;
+    outline-color: aqua;
+    outline-style: groove;
+    border-radius: 7px;
+}
+
+.wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.track{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border: 0.5rem;
+    border-image: stretch black;
+    image-rendering: optimizeSpeed;
+}
+
+.track img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+
+footer{
+    text-align: center;
+}
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  @media (max-width: 481px) {
+    *{
+      width: 90%;
+      align-items: center;
+      align-content: center;
+    }
+    header{
+      width: 119%;
+      font-size: 11px;
+      padding-left: 1%;
+      padding-right: 2%;
+      padding-bottom: 1%;
+      margin-bottom: 1%;
+    }
+    nav{
+      text-align: right;
+      font-size: 12px;
+      width: 100%;
+      margin-top: 1%;
+      margin-left: 0;
+      margin-right: 0%;
+      padding-left: 2%;
+      padding-right: 4%;
+    }
+    nav a{
+      width: 120%;
+      padding-right: 2%;
+      padding-left: 2%;
+      margin-left: -1%;
+      margin-right: 2%;
+      font-size: 12px;
+    }
+    .about{
+      width: 112%;
+      font-size: 10px;
+      text-align: center;
+      align-items: center;
+      align-content: center;
+      padding-left: 7%;
+      padding-right: 0%;
+    }
+    footer{
+      width: 130%;
+      font-size: 13px;
+      text-align: center;
+      padding-left: 0%;
+      padding-bottom: 0%;
+      padding-top: 3%;
+      padding-right: 0%;
+      margin-right: 2%;
+    }
+}
+
+@media (max-width: 769px) {
+  *{
+    width: 90%;
+    align-items: center;
+    align-content: center;
+  }
+  header{
+    width: 119%;
+    font-size: 11px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+  }
+  nav{
+    text-align: right;
+    font-size: 12px;
+    width: 97%;
+    margin-top: 1%;
+    margin-left: 0;
+    margin-right: 1%;
+    padding-left: 0%;
+    padding-right: 12%;
+  }
+  nav a{
+    width: 100%;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin-left: -1%;
+    margin-right: 2%;
+    font-size: 12px;
+  }
+  .about{
+    width: 105%;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    padding-left: 7%;
+    padding-right: 0%;
+    margin-right: 1%;
+    padding-top: 1%;
+    margin-top: 3%;
+  }
+  footer{
+    width: 130%;
+    font-size: 13px;
+    text-align: center;
+    padding-left: 0%;
+    padding-bottom: 0%;
+    padding-top: 1%;
+    padding-right: 0%;
+    margin-right: 2%;
+  }
+}
+
+
+
+@media (max-width: 821px) {
+*{
+  width: 86%;
+  align-items: center;
+  align-content: center;
+}
+header{
+  align-content: center;
+  text-align: center;
+  width: 110%;
+  font-size: 12px;
+  padding-left: 10%;
+  border-radius: 10px;
+  padding-right: 0%;
+  margin-left: 2%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+nav{
+  text-align: right;
+  font-size: 16px;
+  width: 98%;
+  margin-top: 1%;
+  margin-left: 0;
+  margin-right: 1%;
+  padding-left: 0%;
+  padding-right: 12%;
+}
+nav a{
+  width: 103%;
+  padding-right: 0%;
+  padding-left: 1%;
+  margin-left: 1%;
+  margin-right: 0%;
+  font-size: 12px;
+}
+.about{
+  width: 112%;
+  font-size: 15px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  padding-left: 7%;
+  padding-right: 0%;
+  margin-right: 0%;
+  padding-top: 1%;
+  margin-top: 3%;
+  margin-left: 3%;
+}
+footer{
+  width: 130%;
+  font-size: 25px;
+  text-align: center;
+  padding-left: 0%;
+  padding-bottom: 0%;
+  padding-top: 8%;
+  padding-right: 0%;
+  margin-right: 0%;
+}
+}
+
+@media (max-width: 855px) {
+*{
+  width: 86%;
+  align-items: center;
+  align-content: center;
+}
+header{
+  align-content: center;
+  text-align: center;
+  width: 107%;
+  font-size: 12px;
+  padding-left: 10%;
+  border-radius: 10px;
+  padding-right: 0%;
+  margin-left: 2%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+nav{
+  text-align: right;
+  font-size: 22px;
+  width: 98%;
+  margin-top: 1%;
+  margin-left: 0;
+  margin-right: 1%;
+  padding-left: 0%;
+  padding-right: 15%;
+}
+nav a{
+  width: 107%;
+  font-size: 24px;
+  padding-right: 0%;
+  padding-left: 1%;
+  margin-left: 1%;
+  margin-right: 0%;
+  font-size: 12px;
+}
+.about{
+  width: 107%;
+  font-size: 18px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  padding-left: 7%;
+  padding-right: 0%;
+  margin-right: 0%;
+  padding-top: 1%;
+  margin-top: 3%;
+  margin-left: 3%;
+}
+footer{
+  width: 90%;
+  font-size: 25px;
+  text-align: center;
+  padding-left: 10%;
+  padding-bottom: 0%;
+  padding-top: 8%;
+  padding-right: 0%;
+  margin-right: 0%;
+}
+}
+
+@media (max-width: 542px) {
+*{
+  width: 86%;
+  align-items: center;
+  align-content: center;
+}
+header{
+  align-content: center;
+  text-align: center;
+  width: 117%;
+  font-size: 12px;
+  padding-left: 10%;
+  border-radius: 10px;
+  padding-right: 0%;
+  margin-left: 2%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+nav{
+  text-align: right;
+  font-size: 16px;
+  width: 99%;
+  margin-top: 1%;
+  margin-left: 0;
+  margin-right: 1%;
+  padding-left: 0%;
+  padding-right: 14%;
+}
+nav a{
+  width: 103%;
+  padding-right: 2%;
+  padding-left: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  font-size: 12px;
+}
+.about{
+  width: 120%;
+  font-size: 15px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  padding-left: 6%;
+  padding-right: 0%;
+  margin-right: 3%;
+  padding-top: 1%;
+  margin-top: 3%;
+  margin-left: 3%;
+}
+footer{
+  width: 130%;
+  font-size: 25px;
+  text-align: center;
+  padding-left: 0%;
+  padding-bottom: 0%;
+  padding-top: 8%;
+  padding-right: 0%;
+  margin-right: 0%;
+  margin-top: 19%;
+}
+}
+
+@media (max-width: 350px) {
+*{
+  width: 70%;
+  align-items: center;
+  align-content: center;
+}
+header{
+  align-content: center;
+  text-align: center;
+  width: 73%;
+  font-size: 9px;
+  padding-left: 10%;
+  border-radius: 10px;
+  padding-right: 0%;
+  margin-left: 6%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+nav{
+  text-align: right;
+  font-size: 16px;
+  width: 99%;
+  margin-top: 1%;
+  margin-left: 0;
+  margin-right: 1%;
+  padding-left: 0%;
+  padding-right: 14%;
+}
+nav a{
+  width: 103%;
+  padding-right: 2%;
+  padding-left: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  font-size: 10px;
+}
+.about{
+  width: 103%;
+  font-size: 11px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  padding-left: 6%;
+  padding-right: 0%;
+  margin-right: 3%;
+  padding-top: 1%;
+  margin-top: 3%;
+  margin-left: 8%;
+}
+footer{
+  width: 103%;
+  font-size: 16px;
+  text-align: center;
+  padding-left: 0%;
+  padding-bottom: 0%;
+  padding-top: 8%;
+  padding-right: 0%;
+  margin-right: 0%;
+  margin-top: 0%;
+  margin-left: 12%;
+}
+}
+
+@media (max-width: 430px) {
+*{
+  width: 86%;
+  align-items: center;
+  align-content: center;
+}
+header{
+  align-content: center;
+  text-align: center;
+  width: 103%;
+  font-size: 9px;
+  padding-left: 10%;
+  border-radius: 10px;
+  padding-right: 0%;
+  margin-left: 6%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+nav{
+  text-align: right;
+  font-size: 16px;
+  width: 99%;
+  margin-top: 1%;
+  margin-left: 0;
+  margin-right: 1%;
+  padding-left: 0%;
+  padding-right: 14%;
+}
+nav a{
+  width: 103%;
+  padding-right: 2%;
+  padding-left: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  font-size: 10px;
+}
+.about{
+  width: 103%;
+  font-size: 11px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  padding-left: 6%;
+  padding-right: 0%;
+  margin-right: 3%;
+  padding-top: 1%;
+  margin-top: 3%;
+  margin-left: 8%;
+}
+footer{
+  width: 103%;
+  font-size: 16px;
+  text-align: center;
+  padding-left: 0%;
+  padding-bottom: 0%;
+  padding-top: 8%;
+  padding-right: 0%;
+  margin-right: 0%;
+  margin-top: 0%;
+  margin-left: 12%;
+}
+}
+
+@media (max-width: 1024px) {
+*{
+  width: 86%;
+  align-items: center;
+  align-content: center;
+}
+header{
+  align-content: center;
+  text-align: center;
+  width: 102%;
+  font-size: 19px;
+  padding-left: 10%;
+  border-radius: 10px;
+  padding-right: 0%;
+  margin-left: 5%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+nav{
+  text-align: right;
+  width: 101%;
+  margin-top: 1%;
+  margin-left: 0;
+  margin-right: 0%;
+  padding-left: 0%;
+  padding-right: 15%;
+  margin-bottom: 1%;
+}
+nav a{
+  width: 101%;
+  font-size: 36px;
+  padding-right: 0%;
+  padding-left: 1%;
+  margin-left: 1%;
+  margin-right: 2%;
+  margin-bottom: 3%;
+  font-size: 18px;
+}
+.about{
+  width: 105%;
+  font-size: 18px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  padding-left: 7%;
+  padding-right: 0%;
+  margin-right: 0%;
+  padding-top: 1%;
+  margin-top: 3%;
+  margin-left: 6%;
+}
+footer{
+  width: 96%;
+  font-size: 32px;
+  text-align: center;
+  padding-left: 17%;
+  padding-bottom: 0%;
+  padding-top: 8%;
+  padding-right: 0%;
+  margin-right: 0%;
+}
+}
